@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="backToTop" class="back-to-top">
+      <i class="fa-solid fa-circle-up"></i>
+    </div>
+    <!-- Hlavička -->
+    <header>
+      <img src="images/netflixlogo.png" alt="Netflix Logo" class="logo" />
+      <button class="register-btn" id="registerBtn">REGISTRACE</button>
+    </header>
+
+    <!-- Registrační formulář -->
+    <div class="modal" id="registrationModal">
+      <div class="modal-content">
+        <form id="registrationForm">
+          <div class="form-group">
+            <input type="text" placeholder="Křestní jméno" required />
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Příjmení" required />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Přihlašovací e-mail" required />
+          </div>
+          <div class="form-group">
+            <input
+              type="password"
+              placeholder="Vaše heslo"
+              id="password1"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="password"
+              placeholder="Heslo znovu"
+              id="password2"
+              required
+            />
+          </div>
+          <button type="button" class="submit-btn">ODESLAT</button>
+        </form>
+      </div>
+    </div>
+
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>
+          <span>Neomezené sledování</span>
+          <span>filmů, TV pořadů a</span>
+          <span>dalšího obsahu</span>
+        </h1>
+        <p class="price">Už od 239Kč. Zrušte kdykoliv.</p>
+        <p class="cta-text">
+          Jste připraveni se dívat? Pro vytvoření nebo obnovení členství zadejte
+          e-mail.
+        </p>
+        <form class="email-form">
+          <input type="email" placeholder="Emailová adresa" />
+          <button type="submit">ZAČÍT</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="movie-section">
+      <div class="container">
+        <div class="movie-grid">
+          <div class="movie-item">
+            <img src="images/avengers.jpg" alt="Avengers" class="movie-image" />
+          </div>
+          <div class="movie-item">
+            <img
+              src="images/bugs-life.jpeg"
+              alt="Bugs Life"
+              class="movie-image"
+            />
+          </div>
+          <div class="movie-item">
+            <img src="images/thor.jpeg" alt="Thor" class="movie-image" />
+          </div>
+        </div>
+        <button class="find-more-btn">Najít další filmy</button>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <a href="#">Často kladené otázky</a>
+          <a href="#">Vztahy s investory</a>
+          <a href="#">Jak se dívat</a>
+          <a href="#">Podnikové informace</a>
+          <a href="#">Právní oznámení</a>
+        </div>
+        <div class="footer-column">
+          <a href="#">Centrum zákaznické podpory</a>
+          <a href="#">Kariéra</a>
+          <a href="#">Podmínky používání</a>
+          <a href="#">Kontaktujte nás</a>
+          <a href="#">Uvádí jedině Netflix</a>
+        </div>
+        <div class="footer-column">
+          <a href="#">Účet</a>
+          <a href="#">Uplatněte dárkové poukazy</a>
+          <a href="#">Soukromí</a>
+          <a href="#">Test rychlosti</a>
+          <a href="#">Reklamy</a>
+        </div>
+        <div class="footer-column">
+          <a href="#">Pro média</a>
+          <a href="#">Koupit dárkové poukazy</a>
+          <a href="#">Nastavení souborů cookie</a>
+          <a href="#">Právní záruka</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
